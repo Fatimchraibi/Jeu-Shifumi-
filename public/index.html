@@ -8,19 +8,24 @@
     <title>Shifumi</title>
   </head>
   <body>
+    <h1>ShiFuMi</h1>
     <div class="jeu">
       <div class="choix">
         <h4>Joueur</h4>
         <div class="button btn-joueur" id="pierre">
-          <img src="./assets/img/dore-remove.png" alt="pierre" />
+          <img class="img" src="./assets/img/dore-remove.png" alt="pierre" />
           <p>OR</p>
         </div>
         <div class="button btn-joueur" id="feuille">
-          <img src="./assets/img/rouge-removebg-preview.png" alt="feuille" />
+          <img
+            class="img"
+            src="./assets/img/rouge-removebg-preview.png"
+            alt="feuille"
+          />
           <p>ROUGE</p>
         </div>
         <div class="button btn-joueur" id="ciseaux">
-          <img src="./assets/img/noir-remove.jpg" alt="ciseaux" />
+          <img class="img" src="./assets/img/noir-remove.jpg" alt="ciseaux" />
           <p>NOIR</p>
         </div>
       </div>
@@ -28,30 +33,34 @@
       <div class="choix">
         <h4>Ordinateur</h4>
         <div class="button btn-ordi" id="opierre">
-          <img src="./assets/img/dore-remove.png" alt="pierre" />
+          <img class="img" src="./assets/img/dore-remove.png" alt="pierre" />
           <p>Or</p>
         </div>
         <div class="button btn-ordi" id="ofeuille">
-          <img src="./assets/img/rouge-removebg-preview.png" alt="feuille" />
+          <img
+            class="img"
+            src="./assets/img/rouge-removebg-preview.png"
+            alt="feuille"
+          />
           <p>ROUGE</p>
         </div>
         <div class="button btn-ordi" id="ociseaux">
-          <img src="./assets/img/noir-remove.jpg" alt="ciseaux" />
+          <img class="img" src="./assets/img/noir-remove.jpg" alt="ciseaux" />
           <p>NOIR</p>
         </div>
       </div>
     </div>
 
+    <div class="action">
+      <p class="msg" id="message">A vous de jouer !</p>
+      <div class="new" id="next">Tour suivant</div>
+    </div>
     <div class="score">
-      <p>Vous</p>
-      <p>Ordinateur</p>
+      <p class="style">Joueur</p>
+      <p classe="Ostyle">Ordinateur</p>
       <p id="score-joueur">0</p>
       <p id="score-ordinateur">0</p>
-      <div id="reset">Recommencer</div>
-    </div>
-    <div class="action">
-      <p id="message">A vous de jouer !</p>
-      <div id="next">Tour suivant</div>
+      <div class="newR" id="reset">Nouvelle manche</div>
     </div>
 
     <script src="./assets/js/script.js"></script>

@@ -2,7 +2,7 @@
   --primary: #00d9ff;
   --secondary: #ff8800;
   --back: #f1f1f1;
-  --action: #ff6565;
+  --action: #4f2012;
   --border-radius: 15px;
   --btn-padding: 20px;
 }
@@ -14,13 +14,37 @@
 }
 
 body {
-  background-color: var(--back);
-  font-family: sans-serif;
+  background: url(../img/fond2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: var(--back); */
+  /* font-family: sans-serif; */
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 200px;
+  color: #493b30;
+}
+h4 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 35px;
+  color: #3b2901;
+  margin-top: 10px;
+}
+.img {
+  height: 60px;
+  width: 60px;
+}
+/* .style {
+  font-family: 'Lobster', cursive;
+  color: #b85103;
+} */
 
 .score {
   margin-top: 20px;
@@ -30,9 +54,9 @@ body {
   gap: 20px;
   text-align: center;
   font-size: 35px;
-  background-color: white;
+  background-color: #8b9095;
   padding: var(--btn-padding);
-  border-radius: 15px;
+  border-radius: 40px;
 }
 
 #reset {
@@ -49,9 +73,19 @@ body {
   margin-bottom: 40px;
   text-align: center;
 }
+.new {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  color: #886410;
+}
 
 #message {
-  font-size: 25px;
+  /* font-size: 25px; */
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 35px;
+  color: #f5ce74;
+  margin-top: 10px;
 }
 
 #next {
@@ -91,7 +125,7 @@ body {
 
 .btn-joueur {
   cursor: pointer;
-  background-color: white;
+  background-color: #8b9095;
 }
 
 .btn-joueur:hover {
@@ -123,3 +157,100 @@ body {
 .btn-ordi.active {
   background-color: var(--secondary);
 }
+
+/* ----------------------------cssmodif------------------------------ 
+body {
+  height: 100%;
+  background: url(../img/fond2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.picture {
+  margin-top: 20px;
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+}
+.pictureJ {
+  margin-top: 20px;
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+}
+.btn-joueur {
+  cursor: pointer;
+}
+
+.joueur {
+  margin-top: 80px;
+  background-color: rgb(66, 53, 53);
+  height: 400px;
+  width: 200px;
+  border-radius: 25px;
+}
+
+p {
+  padding-top: 40px;
+  margin-left: 20px;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(247, 246, 214);
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 200px;
+  color: #493b30;
+}
+@media screen and (max-width: 600px) {
+  .h1 {
+    font-size: 50px;
+  }
+}
+.ordi {
+  margin-top: 80px;
+  background-color: rgb(66, 53, 53);
+  height: 400px;
+  width: 200px;
+  border-radius: 25px;
+}
+
+.imageVs {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 90px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.picplay {
+  color: rgb(36, 22, 7);
+}
+
+h4 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 35px;
+  color: #f5ce74;
+  margin-top: 10px;
+}
+
+hr {
+  color: #f5ce74;
+  font-size: 50px;
+}
+
+.msg {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 35px;
+  color: #f5ce74;
+  margin-top: 10px;
+} */
