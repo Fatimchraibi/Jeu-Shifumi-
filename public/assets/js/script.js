@@ -103,9 +103,9 @@ const preparerNouvelleManche = () => {
 
   nextBtn.style.visibility = 'hidden'
 
-  opierreBtn.classList.remove('active')
-  ofeuilleBtn.classList.remove('active')
-  ociseauxBtn.classList.remove('active')
+  oOrBtn.classList.remove('active')
+  oRougeBtn.classList.remove('active')
+  oNoirciseauxBtn.classList.remove('active')
 
   message.textContent = 'A vous de jouer !'
 }
