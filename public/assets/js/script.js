@@ -2,9 +2,9 @@ let resetBtn = document.getElementById('reset')
 let scoreJoueur = document.getElementById('score-joueur')
 let scoreOrdinateur = document.getElementById('score-ordinateur')
 let btnJoueur = [...document.getElementsByClassName('btn-joueur')]
-let opierreBtn = document.getElementById('opierre')
-let ofeuilleBtn = document.getElementById('ofeuille')
-let ociseauxBtn = document.getElementById('ociseaux')
+let oOrBtn = document.getElementById('oor')
+let oRougeBtn = document.getElementById('orouge')
+let oNoirBtn = document.getElementById('oNoir')
 let message = document.getElementById('message')
 let nextBtn = document.getElementById('next')
 
@@ -28,9 +28,9 @@ const jouerManche = (e) => {
   nextBtn.style.visibility = 'visible'
 }
 
-const PIERRE = 'pierre'
-const FEUILLE = 'feuille'
-const CISEAUX = 'ciseaux'
+const OR = 'or'
+const ROUGE = 'rouge'
+const NOIR = 'noir'
 
 const faireChoixOridnateur = () => {
   // 0 = pierre
@@ -41,14 +41,14 @@ const faireChoixOridnateur = () => {
 
   switch (nbAleatoire) {
     case 0:
-      opierreBtn.classList.add('active')
-      return PIERRE
+      oOrBtn.classList.add('active')
+      return OR
     case 1:
-      ofeuilleBtn.classList.add('active')
-      return FEUILLE
+      oRougeBtn.classList.add('active')
+      return ROUGE
     default:
-      ociseauxBtn.classList.add('active')
-      return CISEAUX
+      oNoirBtn.classList.add('active')
+      return NOIR
   }
 }
 
@@ -58,26 +58,26 @@ const verifierGagnant = (choixJoueur, choixOrdi) => {
     return
   }
 
-  if (choixJoueur == PIERRE) {
-    if (choixOrdi == FEUILLE) {
+  if (choixJoueur == OR) {
+    if (choixOrdi == ROUGE) {
       return victoireOrdinateur()
-    } else if (choixOrdi == CISEAUX) {
+    } else if (choixOrdi == NOIR) {
       return victoireJoueur()
     }
   }
 
-  if (choixJoueur == FEUILLE) {
-    if (choixOrdi == CISEAUX) {
+  if (choixJoueur == ROUGE) {
+    if (choixOrdi == NOIR) {
       return victoireOrdinateur()
-    } else if (choixOrdi == PIERRE) {
+    } else if (choixOrdi == OR) {
       return victoireJoueur()
     }
   }
 
-  if (choixJoueur == CISEAUX) {
-    if (choixOrdi == PIERRE) {
+  if (choixJoueur == NOIR) {
+    if (choixOrdi == OR) {
       return victoireOrdinateur()
-    } else if (choixOrdi == FEUILLE) {
+    } else if (choixOrdi == ROUGE) {
       return victoireJoueur()
     }
   }
